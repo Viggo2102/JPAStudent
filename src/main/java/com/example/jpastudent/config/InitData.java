@@ -38,5 +38,7 @@ public class InitData implements CommandLineRunner {
         new Student("Mona", LocalDate.of(1997,02,21),LocalTime.of(10,11))
         );
         studentRepository.saveAll(students);
+
+        studentRepository.save(new Student("Peter Larsen", LocalDate.of(1980, 02,21), LocalTime.of(01,02,03)));
     }
 }
